@@ -53,17 +53,20 @@ enum C2eRgbLed {
 }
 
 enum C2eRgbColor {
-    rot,
-    grün,
-    blau,
-    gelb,
-    violett,
-    türkis,
-    weiß
+    red     = 0xff0000,
+    green   = 0x00ff00,
+    blue    = 0x0000ff,
+    yellow  = 0xffff00,
+    violett = 0xa300ff,
+    aqua    = 0x00ffdc,
+    white   = 0xffffff,
+    black   = 0x000000
 }
 
 enum C2eDir {
+    //% block="vorwärts"
     vorwaerts = 0,
+    //% block="rückwärts"
     rueckwaerts = 1
 }
 
