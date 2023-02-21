@@ -2,6 +2,7 @@
 // V0.0.1
 // Calli:bot 2E
 // 12/2020 Knotech GmbH
+// Edited by T.Damerow like MKleinSB/pxt-callibot
 
 enum C2eMotor {
     links,
@@ -62,8 +63,8 @@ enum C2eRgbColor {
 }
 
 enum C2eDir {
-    vorwärts = 0,
-    rückwärts = 1
+    vorwaerts = 0,
+    rueckwaerts = 1
 }
 
 enum C2eState {
@@ -279,7 +280,7 @@ namespace calliBot2E {
         pins.i2cWriteBuffer(0x22, buffer);
     }
 
-    //% blockId=c2eResetEncoder block="Lösche Encoder-Zähler |%encoder"
+    //% blockId=c2eResetEncoder block="Loesche Encoder-Zähler |%encoder"
     //% advanced=true
     export function resetEncoder (encoder: C2eMotor) {
         let bitMask = 0;
